@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDOT.SFMC.WebApi", "GDOT.SFMC.WebApi\GDOT.SFMC.WebApi.csproj", "{34C97EC8-C639-4E5E-BF3C-C1D8CAED1EA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDOT.SFMC.Domain", "GDOT.SFMC.Domain\GDOT.SFMC.Domain.csproj", "{FFB07CFA-3164-4635-B844-2971A8109C74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDOT.SFMC.Business", "GDOT.SFMC.Services\GDOT.SFMC.Business.csproj", "{FC12FE70-7B46-4EDF-A6E2-E0F67AD9C189}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDOT.SFMC.WindowHost", "GDOT.SFMC.WindowHost\GDOT.SFMC.WindowHost.csproj", "{9DC8C9BF-B523-4CA2-A344-E9EEC1D98000}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDOT.SFMC.Data", "GDOT.SFMC.Data\GDOT.SFMC.Data.csproj", "{FE9A69EF-AECD-4818-93E8-C59DF9E070A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDOT.SFMC.Common", "GDOT.SFMC.Common\GDOT.SFMC.Common.csproj", "{045586DF-9E17-4B6C-B107-1201BBF516C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34C97EC8-C639-4E5E-BF3C-C1D8CAED1EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C97EC8-C639-4E5E-BF3C-C1D8CAED1EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C97EC8-C639-4E5E-BF3C-C1D8CAED1EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C97EC8-C639-4E5E-BF3C-C1D8CAED1EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFB07CFA-3164-4635-B844-2971A8109C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB07CFA-3164-4635-B844-2971A8109C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB07CFA-3164-4635-B844-2971A8109C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB07CFA-3164-4635-B844-2971A8109C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC12FE70-7B46-4EDF-A6E2-E0F67AD9C189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC12FE70-7B46-4EDF-A6E2-E0F67AD9C189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC12FE70-7B46-4EDF-A6E2-E0F67AD9C189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC12FE70-7B46-4EDF-A6E2-E0F67AD9C189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DC8C9BF-B523-4CA2-A344-E9EEC1D98000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DC8C9BF-B523-4CA2-A344-E9EEC1D98000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DC8C9BF-B523-4CA2-A344-E9EEC1D98000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DC8C9BF-B523-4CA2-A344-E9EEC1D98000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE9A69EF-AECD-4818-93E8-C59DF9E070A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE9A69EF-AECD-4818-93E8-C59DF9E070A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE9A69EF-AECD-4818-93E8-C59DF9E070A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE9A69EF-AECD-4818-93E8-C59DF9E070A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{045586DF-9E17-4B6C-B107-1201BBF516C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{045586DF-9E17-4B6C-B107-1201BBF516C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{045586DF-9E17-4B6C-B107-1201BBF516C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{045586DF-9E17-4B6C-B107-1201BBF516C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88433216-ECB9-4E81-90C2-79EF91D41321}
+	EndGlobalSection
+EndGlobal
