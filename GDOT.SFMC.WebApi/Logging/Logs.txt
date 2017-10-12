@@ -1,3 +1,5 @@
 2017-10-12 12:59:25,204 [5] INFO  GDOT.SFMC.WebApi.NotificationController Notification Controller
 2017-10-12 12:59:37,392 [8] INFO  GDOT.SFMC.WebApi.NotificationController Notification Controller
 2017-10-12 13:44:13,146 [12] INFO  GDOT.SFMC.WebApi.NotificationController SendMessageToQueue Request initiated
+2017-10-12 17:50:52,399 [11] INFO  GDOT.SFMC.WebApi.NotificationController SendMessageToQueue Request initiated
+2017-10-12 18:03:00,139 [12] INFO  GDOT.SFMC.WebApi.NotificationController SendMessageToQueue Request initiated

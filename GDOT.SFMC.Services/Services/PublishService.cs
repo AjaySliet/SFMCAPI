@@ -8,7 +8,14 @@ namespace GDOT.SFMC.Business.Services
 {
     public class PublishService: IPublishService
     {
-        const string queueName = @".\private$\SFMCMessageQueue";
+        private IMessageQueueService _messageQueueService;
+        private readonly string queueName;
+
+        public PublishService(IMessageQueueService messageQueueService)
+        {
+            _messageQueueService = messageQueueService;
+            queueName = @".\private$\SFMCMessageQueue";
+        }
 
         public Notification SendMessageToQueue(Notification notificationRequest)
         {
@@ -18,8 +25,8 @@ namespace GDOT.SFMC.Business.Services
                 && notificationRequest.EventList.Count.Equals(0))
                 return notificationRequest;
 
-            messageQueue = MessageQueue.Exists(queueName) ? new MessageQueue(queueName) :
-                                                        MessageQueue.Create(queueName, true);
+            messageQueue = _messageQueueService.Exists(queueName) ? new MessageQueue(queueName) :
+                                                        _messageQueueService.Create(queueName, true);
 
             notificationRequest.EventList.ForEach(x => x.AttributesList.ForEach(
                 a => a.Add("ResponseToken", Guid.NewGuid().ToString())));
