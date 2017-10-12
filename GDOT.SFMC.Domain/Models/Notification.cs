@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace GDOT.SFMC.Domain.Models
 {
+    [Serializable]
     public class Notification
     {
         public List<EventDetails> EventList { get; set; }
