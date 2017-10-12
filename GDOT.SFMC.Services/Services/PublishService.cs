@@ -19,7 +19,7 @@ namespace GDOT.SFMC.Business.Services
                 return notificationRequest;
 
             messageQueue = MessageQueue.Exists(queueName) ? new MessageQueue(queueName) :
-                                                        MessageQueue.Create(queueName);
+                                                        MessageQueue.Create(queueName, true);
 
             notificationRequest.EventList.ForEach(x => x.AttributesList.ForEach(
                 a => a.Add("ResponseToken", Guid.NewGuid().ToString())));
@@ -33,17 +33,19 @@ namespace GDOT.SFMC.Business.Services
                     messageQueueTransaction.Begin();
 
                     // Send the message.
-                    messageQueue.Send(notificationRequest, MessageQueueTransactionType.Automatic);
+                    messageQueue.Send(notificationRequest, messageQueueTransaction);
 
-                    notificationRequest.Status = Status.Failure;
+                    messageQueueTransaction.Commit();
                 }
             }
             catch (MessageQueueException ee)
             {
+                notificationRequest.Status = Status.Failure;
                 // logging
             }
             catch (Exception eee)
             {
+                notificationRequest.Status = Status.Failure;
                 //logging
             }
             finally
